@@ -41,7 +41,7 @@ public class RoomDetailGenerator {
 
 			playAgain = scnr.next();
 
-		} while (playAgain.equals("y"));
+		} while (playAgain.equalsIgnoreCase("y"));
 
 		scnr.close();
 	}
