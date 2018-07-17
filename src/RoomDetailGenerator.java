@@ -10,9 +10,9 @@ public class RoomDetailGenerator {
 		double length;
 		double width;
 		double height;
-		double area;
-		double perimeter;
-		double volume;
+		int area;
+		int perimeter;
+		int volume;
 		String playAgain = null;
 
 		System.out.println("Welcome to Grand Circus's Room Detail Generator!");
@@ -31,7 +31,7 @@ public class RoomDetailGenerator {
 			area = (int) (length * width);
 			System.out.println("Area: " + area);
 
-			perimeter = (int) (2 * length) + (2 * width);
+			perimeter = (int) ((2 * length) + (2 * width));
 			System.out.println("Perimeter: " + perimeter);
 
 			volume = (int) (length * width * height);
@@ -42,6 +42,8 @@ public class RoomDetailGenerator {
 			playAgain = scnr.next();
 
 		} while (playAgain.equalsIgnoreCase("y"));
+		
+		System.out.println("Goodbye!");
 
 		scnr.close();
 	}
